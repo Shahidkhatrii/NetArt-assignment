@@ -25,7 +25,6 @@ body {
 }
 
 
-
 .hero-section .left-con {
   padding: 0rem 5rem;
 }
@@ -53,9 +52,6 @@ body {
 
 .hero-section .right-con img {
   padding-left: 1rem;
-}
-
-.hero-section .right-con img {
   width: 55vw;
 }
 
@@ -145,4 +141,49 @@ span:not(:last-child)::after {
 
 .footer a span {
   font-weight: 900;
+}
+
+@media (max-width:700px) {
+  html {
+    font-size: 12px;
+  }
+
+  .hero-section .left-con {
+    padding: 0rem 2rem;
+  }
+
+  .footer {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+}
+
+@media (max-width:550px) {
+  html {
+    font-size: 12px;
+  }
+
+  .header-section img {
+    height: 13vh;
+  }
+
+  .hero-section {
+    flex-direction: column;
+
+  }
+
+  .hero-section .right-con {
+    align-self: center;
+    text-align: center;
+  }
+
+  .hero-section .right-con img {
+    align-self: center;
+  }
+
 }
